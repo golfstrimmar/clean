@@ -1,0 +1,68 @@
+.footer
+  background-color: #00733b
+  color: white
+  padding: 48px 0 0
+  position: relative
+  +background-img('/assets/img/main/imgs/footer-bg.jpg')
+
+
+.footer__body
+  display: grid
+  grid-template-columns: 1fr 1fr 375px
+  column-gap:  116px
+  @media (max-width: 999px) 
+    grid-template-columns:  1fr
+  
+.footer-item__line
+  margin: 0 0 8px 0
+  color:  white 
+
+.footer-item__description
+  margin: 14px 0 38px 0
+
+.footer__copyright
+  padding: 15px 0 19px
+  display: grid
+  grid-template-columns: 292px 1fr
+  column-gap: 101px
+  @media (max-width: 1199px) 
+    grid-template-columns:  1fr
+.footer__logo
+  position: relative
+  height: 22px
+  width: 161px
+  margin: 0 0 33px 0
+
+.soc
+   display: flex
+
+.soc__item
+  margin: 2px 4px 0 0
+  height: 8px
+  +center
+  svg
+    stroke: #fff
+    width: 20px
+    max-height: 18px
+    transition: all .2s ease-in-out
+    fill: #fff
+  &:hover
+    svg
+      stroke: lighten($active, 20%)
+      fill: ($active, 20%)
+
+
+.footer-item__title
+  margin: 5px 0 27px 0
+
+
+
+
+@media (max-width: 999px)
+  .footer-item__title 
+    margin: 26px 0 0px
+
+@media (max-width: 1199px)
+  .footer 
+    background-size: 100%
+    background-position: bottom

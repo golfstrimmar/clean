@@ -1,0 +1,38 @@
+.main-link
+  margin: 100px 0 0 0
+  
+.main-link__wrapper
+  background-color: #ebf4ef
+  
+.main-link__body
+    display: grid
+    grid-template-columns: 1fr 250px
+    align-items: center
+    min-height: 130px
+  
+.main-link__button
+    height:50px
+  
+.main-link__text
+   color: #414042
+   margin: 9px 0 0 0
+
+
+
+
+@media (max-width: 767px)
+  .main-link__body 
+    grid-template-columns: 100%
+    // justify-items: center 
+
+  .main-link__title,.main-link__text
+    +jucc
+    text-align: center
+    margin: 20px 0 0 0
+
+
+
+  .main-link__button
+    width: 100%
+    max-width: 300px
+    margin: 30px auto

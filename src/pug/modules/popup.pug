@@ -1,0 +1,88 @@
+.popup#popup
+    .popup__overlay
+      .popup__inner
+          .popup__title
+            h2._f-26-700  Užpildykite 3 klausimų formą ir artimiausiu metu mes atsiųsime Jums geriausios kainos pasiūlymą!
+          
+          .popup__title
+            h3._f-26-700  1. Pasirinkite valymo tipą
+          ul.popup__cards 
+            li.popup__card.popup-card.popup-card--active
+              .popup-card__icon
+                svg.icon-line 
+                  use(xlink:href='/assets/img/sprite.svg#house-popup')
+                svg.icon-line 
+                  use(xlink:href='/assets/img/sprite.svg#dotts')
+
+              .popup-card__text  Reguliarus biuro patalpų valymas
+            li.popup__card.popup-card
+              .popup-card__icon
+                svg.icon-line 
+                  use(xlink:href='/assets/img/sprite.svg#i-popup-3')
+                svg.icon-line 
+                  use(xlink:href='/assets/img/sprite.svg#dotts')
+              .popup-card__text  Reguliarus kitos paskirties patalpų valymas
+            li.popup__card.popup-card
+              .popup-card__icon
+                svg.icon-line 
+                  use(xlink:href='/assets/img/sprite.svg#i-popup-2')
+                svg.icon-line 
+                  use(xlink:href='/assets/img/sprite.svg#mark-1')
+              .popup-card__text  Vienkartiniai spec. valymo darbai
+          
+          .popup__title
+            h3._f-26-700  2. Įveskite informaciją apie patalpas
+
+          .small-title  Nurodykite patalpų plotą*
+
+          section.calculator-section(data-type='slider-group' )
+            p.range
+              .calculator-section__number
+                output 
+              input#test1(type='range' min='0' max='1000' value='50' step='1' name='groep1')
+
+            
+          .small-title  2. Nurodykite patalpų valymo dažnumą*
+              p  **Valymas darbo dienomis
+
+
+          .popup__checks
+                .popup__check 
+                    input#rb1(type='radio' name='rb' checked='')
+                    label(for='rb1') 1 kartas per savaitę
+      
+                .popup__check 
+                  input#rb2(type='radio' name='rb' checked='')
+                  label(for='rb2') 2 kartai per savaitę
+                  
+                .popup__check 
+                  input#rb3(type='radio' name='rb' checked='')
+                  label(for='rb3') 3 kartai per savaitę
+                
+                .popup__check 
+                  input#rb4(type='radio' name='rb' checked='')
+                  label(for='rb4') 4 kartai per savaitę
+          
+
+
+          .popup__title
+            h3._f-26-700 3. Įveskite kontaktinę informaciją
+          .form
+              .form__item
+                input#name(type='text' required='' placeholder='Įveskite įmonės pavadinimą')
+                label(for='name') Įmonės pavadinimas*
+              .form__item
+                input#phone(type='phone' required='' placeholder=' Įveskite telefono numerį')
+                label(for='phone') Telefono numeris*
+              .form__item
+                input#email(type='email' required='' placeholder=' Įveskite el. pašto adresą')
+                label(for='email') El. pašto adresas*
+              .form__item
+                textarea#message(type='text' required='' placeholder=' Jūsų komentaras...' cols=' 40' rows='6')
+                label(for='message') Jūsų komentaras
+              .form__item
+                button.submit-button.btn.btn--success(type='submit' )  
+                  span GAUTI PASIŪLYMĄ
+          i.popup__close.popup__close
+            svg
+              use(xlink:href='/assets/img/sprite.svg#cross-big')

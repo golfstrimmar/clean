@@ -1,0 +1,286 @@
+
+  // ==========form ===============
+.form
+
+.form__item 
+    position: relative
+    margin-bottom: 52px
+    label 
+      position: absolute
+      top: -30px
+      left: 0
+      transition: 0.3s
+      transform: translateY(0)
+      pointer-events: none
+      color: blue
+      width: 100%
+      font-size: 14px
+      font-weight: 400
+      color: #414042!important
+    
+    input, textarea 
+      width: 100%
+      outline: none
+      border: 1px solid transparent
+      background-color: transparent
+      background-repeat: no-repeat
+      height: 34px      
+      resize: none
+      padding: 0 0 0 7px
+      border: solid 1px #bcbcbc
+      border-bottom: 2px solid $active
+
+      &:placeholder
+          font-size: 17px
+          font-weight: 400
+          line-height: 1.76
+          color: #929497!important
+    textarea 
+      height: 85px
+
+
+
+
+.submit-button
+  width: 250px
+  height: 50px
+
+
+.popup__title
+  margin: 0 0 36px 0
+  h2
+    color:  $font!important
+  h3
+     color:  $green!important
+
+
+.popup-card__text
+  line-height: 1.29
+  margin: 15px 0 0 0
+  color:  $font!important
+
+.popup__cards
+  display: grid
+  grid-template-columns: repeat(auto-fill, minmax(135px, 1fr))
+  column-gap:  33px
+  margin: -9px 14px 63px 0
+.popup-card--active
+  .popup-card__icon
+    background: $active
+    border: none
+    svg
+      fill: white
+
+.popup-card__icon
+  border: solid 1px #2da34a
+  +fdc
+  min-height: 135px
+  +alic
+  padding: 24px 0 0 0
+  svg
+    fill: $active
+    &:first-child
+      width: 74px
+      height: 74px
+    &:last-child
+      width: 41px
+      height: 14px
+      margin: 7px 0 0 0
+
+.small-title
+  font-size: 14px
+  color: #4e4e4e!important
+  margin: -11px 0 9px 0
+  p
+    font-size: 12px
+    line-height: 2.42
+    color: #4e4e4e!important
+
+    
+
+.popup__checks
+  margin: -5px 0 57px 0
+
+
+.popup__check
+  margin: 0 0 1px 0
+
+
+#popup
+  .calculator-section
+    width: 278px
+    height: 34px!important
+    margin: 0 0 55px 0
+    padding: 0 0  0
+    border: solid 1px #bcbcbc
+    position: relative
+    .calculator-section__number
+      font-size: 17px!important
+      color:  $font!important
+    input[type=range] 
+      padding: 0 0 0 0 
+      -webkit-appearance: none
+      -moz-appearance: none
+      appearance: none
+      width: calc(100%+4px)
+      margin: -20px 0 0 -2px
+      background: transparent!important
+      position: absolute
+      bottom: -17px
+    
+    input[type=range]::-webkit-slider-runnable-track 
+      border-radius: 10px/100%
+      height: 1px
+      border: 1px solid $active 
+      background-color: #fff
+    
+    input[type=range]::-webkit-slider-thumb 
+      background: #ecf0f1
+      border: 1px solid $active 
+      border-radius: 15px/100%
+      cursor: pointer
+      width:15px
+      height: 15px
+      -webkit-appearance: none
+      margin-top: -7px
+    
+
+    input[type=range]::-moz-range-track 
+      border-radius: 10px/100%
+      height: 5px
+      border: 1px solid cyan
+      background-color: #fff
+    
+    input[type=range]::-moz-range-thumb 
+      background: #ecf0f1
+      border: 1px solid cyan
+      border-radius: 10px/100%
+      cursor: pointer
+    
+
+.popup__close
+  svg
+    width: 20px
+    height: 20px
+    stroke: $active
+
+
+
+.form
+  margin: 56px 15px 0 0
+
+.form__item
+  margin: 0 0 48px 0
+
+
+
+
+@media (max-width: 767px)
+  .popup__cards
+    row-gap: 40px
+    grid-template-columns:  1fr
+  .popup-card__icon
+    width: 100%
+  #popup .calculator-section 
+     width: 100%
+
+  .popup__inner 
+    padding: 52px 20px 10px
+
+
+
+/* ------------------------ */
+// .form__item input:focus + label
+//   transform: translateY(-34px)
+
+
+// .form__item textarea:focus + label
+//   transform: translateY(-34px)
+
+// .form__item input:not(:placeholder-shown) + label
+//   transform: translateY(-34px)
+
+
+// .form__item textarea:not(:placeholder-shown) + label
+//   transform: translateY(-34px)
+
+// .form__item input:-webkit-autofill + label
+//   transform: translateY(-34px)
+
+// .form__item textarea:-webkit-autofill + label
+//   transform: translateY(-34px)
+
+/* -------------------------------------- */
+
+.form__item input::-webkit-input-placeholder, .form__item textarea::-webkit-input-placeholder 
+  // color: transparent
+  
+
+// .form__item input::-moz-placeholder, .form__item textarea::-moz-placeholder 
+//   // color: transparent
+// .form__item input:-ms-input-placeholder, .form__item textarea:-ms-input-placeholder 
+//   // color: transparent
+// .form__item input:-moz-placeholder, .form__item textarea:-moz-placeholder 
+  //  color: transparent
+.form__item input:not(:placeholder-shown):invalid, .form__item textarea:not(:placeholder-shown):invalid 
+  color: #fa333c
+  border-bottom: 1px solid #fa333c
+  font-size: 15px
+  font-weight: 400
+// .contacts__file-add 
+//   margin-top: 92px
+//   padding-bottom: 15px
+//   border-bottom: 1px solid #d8d8d8
+//   cursor: pointer
+//   height: 33px
+// .contacts__file-add 
+//   input
+//     opacity: 0
+// .contacts__file-add 
+//   label
+//     top: 33px
+
+@media (max-width:767px) 
+  .form
+    .submit-button
+        width: 100%
+
+// .form
+//     .custom-file 
+//       display: flex
+//       justify-content: flex-end
+//       align-items: center
+//       flex-direction: row
+//       height: 33px
+//       input 
+//         opacity: 0
+//         visibility: hidden
+//         position: absolute
+//         left: 0
+//         pointer-events: none
+//         font-size: 15px
+//         line-height: 25px
+//         font-weight: 400
+//         z-index: 5
+//       label 
+//         transform: translateY(0) 
+//         font-size: 19px
+//         line-height: 25px
+//         font-weight: 400
+
+//       &__lb 
+//         display: inline-block
+//         width: 100%
+//         height: 24px
+//         border: none
+//         position: relative
+//         margin: 0
+//         &.close 
+//           width: 24px
+//         &:before 
+//           transform: rotate(405deg)
+//         .bg 
+//             width: 27px
+//             height: 27px
+//             left: 100%
+//             transform: translate(-120%)

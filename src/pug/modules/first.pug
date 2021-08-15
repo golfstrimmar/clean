@@ -1,0 +1,43 @@
+header.header
+      .container
+        .header__body
+          a(href="#!").header__logo
+            img(src="assets/img/main/svg/logo.svg",alt="img")
+          nav.header__menu.menu
+            i.icon-close21.header__close
+            ul.menu__list
+                li.menu__item  
+                  a.menu__link(href="#about") Apie mus
+                li.menu__item.menu__item--tab
+                    a.menu__link(href="#about") Paslaugos
+                      svg
+                        use(xlink:href='/assets/img/sprite.svg#down')
+                    .menu__tab.menu-tab  
+                        a(href='#!').menu-tab__item  Patalpu valymas
+                        a(href='#!').menu-tab__item  Specialieji darbai
+                        a(href='#!').menu-tab__item  Dezinfekcijos paslaugos
+                        a(href='#!').menu-tab__item  Kiemo teritorijų ir parkingų valymas beipriežiūra
+                        a(href='#!').menu-tab__item  Poremontiniai ir generaliniai valymai
+                        a(href='#!').menu-tab__item  Papildomos paslaugos
+                li.menu__item
+                  a.menu__link(href="#news") Naujienos
+                li.menu__item
+                  a.menu__link(href="#career") Karjera
+                li.menu__item
+                  a.menu__link(href="#calc") Skaičiuoklė
+
+          .header__info.info
+            a(href="#!").btn.btn--success.info__button
+              span Kontaktai  
+          
+          .header__lang.block__select
+                select.select
+                  option(value='LT' disabled ) LT
+                  option(value='LT'  ) LT
+                  option(value='Eng' ) Eng
+                .block__icon
+                  svg
+                      use(xlink:href='/assets/img/sprite.svg#down')
+          i.icon-menu1.header__burger
+          
+

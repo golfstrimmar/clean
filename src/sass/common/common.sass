@@ -1,0 +1,145 @@
+*
+  // outline: 1px solid green
+  box-sizing: border-box
+
+
+.container
+  // outline: 1px solid #4164ff
+//------.container--------
+.container
+  max-width: 1160px
+  width: 100%
+  margin: 0 auto
+  position: relative
+ 
+  
+  @media (min-width: 768px) and (max-width: 1220px)
+    margin: 0 30px
+    max-width: calc( 100% -  60px)
+
+
+
+  @media (max-width: 767px)
+    margin: 0 20px
+    max-width: calc( 100% -  40px)
+
+
+
+
+.wrapper
+  overflow: hidden
+  min-height: 100vh
+
+
+
+
+a
+  display: block
+  transition: all 0.2s ease-in-out
+  color: $font
+  &:hover
+    color: $active
+    cursor: pointer
+
+
+.lock
+  overflow: hidden
+.active
+  opacity: 1
+  visibility: visible
+  display: block
+
+
+
+
+
+img 
+  opacity: 1
+  transition: opacity .3s
+ 
+img[data-src] 
+  opacity: 0
+
+  
+  
+.imgs
+  overflow: hidden
+  position: relative
+  position: absolute
+  width: 100%
+  height: 100%
+  top: 0
+  left: 0
+  img
+    height: 100%
+    width: 100%
+    object-fit: cover
+    object-position: top
+    position: absolute
+    top: 0
+    left: 0
+
+
+
+//  ---------------карточка на слайдере---------------------- 
+.object-card
+  position: relative
+  min-height: 300px
+
+
+// здесь задается высота слайдера!!!
+.object-card__body
+    position: relative
+    z-index: 2
+    +fdc
+    padding: 20px 10px
+    min-height: 300px
+
+.object-card__img
+
+
+
+.object-card__title 
+  text-align: center
+  padding: 0 0 20px 0
+  h3 
+    color: white
+
+    
+.object-card__text
+    color: white
+
+.object-card__button
+  margin: 10px 0 0 0
+  flex-grow: 1
+  +fdc
+  +juce
+  a
+    width: 100px
+    margin: 0 auto
+    height: 40px
+    +br
+    +tu
+
+// --sprite svg
+.i-white
+    width: 30px
+    height: 32px
+    fill: white
+    
+.i-line
+    width: 42px
+    height: 42px
+
+.i-card 
+    width: 75px
+    height: 75px
+
+svg
+  display: inline-block
+
+.test-svg
+  width: 100%
+  height: 50px  
+  background:  pink
+

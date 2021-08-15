@@ -1,0 +1,88 @@
+.main-about
+  margin: 148px 0 0 0
+.main-about__body
+  display: grid
+  grid-template-columns: 52.5% 1fr
+  column-gap: 77px
+
+
+.main-about__button
+    width: 250px
+    height: 50px
+    margin: 38px 0 100px 0
+.main-about__cards
+  display: grid
+  grid-template-columns: repeat(2, 1fr)
+  margin: 35px 0 0 0
+  column-gap: 57px
+  row-gap: 23px
+
+.main-line
+  display: grid
+  grid-template-columns: 62px 1fr
+
+
+.main-about__column--img
+  position: relative
+  .img-1
+    position: relative
+    z-index: 4
+    padding: 0 0 283px
+    width: 285px
+    margin: 331px 0 0 auto
+  .img-2
+    position: relative
+    position: absolute
+    top: 0
+    right:  97px
+    width: 376px
+    height: 523px
+    
+.main-about__text 
+  line-height: 1.8
+  margin: 80px 0 0 0
+
+
+
+@media (min-width: 768px) and (max-width: 1199px)
+    .main-about__column--img
+      .img-1
+        padding: 0 0 calc(175px + (283-175)*((100vw-768px)/(1199-768)))
+        width: calc(175px + (283-175)*((100vw-768px)/(1199-768)))
+        margin: calc(255px + (331-255)*((100vw-768px)/(1199-768))) 0 0 auto
+      .img-2
+        right:  calc(47px + (97-47)*((100vw-768px)/(1199-768)))
+        width: calc(274px + (376-274)*((100vw-768px)/(1199-768)))
+        height: calc(385px + (523-385)*((100vw-768px)/(1199-768)))
+    .main-about__text 
+        margin: 40px 0 0 0
+    .main-about
+      margin: 75px 0 50px 0
+    .main-about__button 
+        margin: 19px 0 26px
+
+
+
+@media (max-width: 767px)
+  .main-about
+    margin: 50px 0 0 0
+  .main-about__body
+      grid-template-columns: 1fr
+  .main-about__text 
+    margin: 30px 0 0 0
+  .main-about__cards
+    grid-template-columns: 1fr
+  .main-about__button 
+    width: 100%
+    max-width:  250px
+    height: 30px
+    margin: 20px 0 50px
+  .main-about__column--img
+    .img-1
+      width: 202px
+      padding: 0 0 202px 0
+    .img-2
+      width: 89%
+      max-width: 282px
+      right: 55px
+      height:460px

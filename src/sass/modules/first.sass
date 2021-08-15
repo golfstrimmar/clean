@@ -1,0 +1,312 @@
+//------.first--------
+.first
+  min-height: 100vh
+.header
+  z-index: 1000
+  transition: all 0.1s ease-in-out
+  position: fixed
+  width: 100%
+  height: 92px
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.16)
+  background: white 
+  display: grid
+  align-items: center
+
+  .container
+    height: 40px
+  @media (min-width: 1000px) and (max-width: 1199px)
+    height: 60px
+  @media (max-width: 999px)
+    height: 60px
+.info_phone
+  @media (max-width: 999px)
+    color: white
+    text-shadow: 0 0 4px white
+//-------------
+.responciveHeader
+  position: fixed
+  width: 100%
+  height: 70px
+  background: rgba(245,245,245, .9)
+
+
+// =======================================================
+
+.header__body
+  margin: 0 auto
+  height: 100%
+  display: grid
+  grid-template-columns: 216px 1fr minmax(150px, auto)
+  grid-template-rows:  100%
+  grid-template-areas: "logo menu info"
+  position: relative
+  // @media (min-width: 1000px) and (max-width: 1199px)
+  //   grid-template-columns: 100px 1fr minmax(260px, auto)
+  // @media (max-width: 999px)
+  //   grid-template-columns: 100px 1fr
+    // margin: 0 10px
+//-------------
+.header__burger
+  font-size: 20px
+  display: none
+  &:hover
+    cursor: pointer
+  @media (max-width: 999px)
+    display: inline-block
+    color: #181818
+    +absolute(20px,20px,50%,auto,0,0%,-50%)
+//-------------
+.header__logo
+  grid-area: logo
+  img
+    height: 100%
+.header__menu
+  margin: 0 36px 0 231px
+  position: relative
+  grid-area: menu
+  @media (min-width: 1000px) and (max-width: 1199px)
+    margin: 0 20px 0 0
+  @media (max-width: 999px)
+    width: 100vw
+    min-height: 100vh
+    position: fixed
+    top: 0
+    transform: translateX(-100vw)
+    left: 0
+    padding: 100px 20px 0 20px
+    overflow: auto
+    text-align: right
+    +fdc
+    +jucs
+    +alis
+    background: rgba(0,0,0,.95)
+    z-index: 1000
+    transition: all 0.2s ease-in-out
+
+.header__close
+  display: none
+  font-size: 20px
+  @media (max-width: 999px)
+    display: block
+    +absolute(auto,auto,10px,auto,10px,0%,0%)
+    color: white
+    &:hover
+      cursor: pointer
+
+
+.menu-active
+  @media (max-width: 999px)
+    transform: translateX(0)
+
+.menu__list
+  +alic
+  +jucb
+  height: 100%
+  @media (max-width: 999px)
+    +fdc
+    +alie
+    
+.menu__item
+  +alic
+  height: 100%
+  +border(1px , transparent)
+  margin: 0 
+  &:last-child
+    margin: 0 0 0 0
+
+  @media (max-width: 999px)
+    margin: 0 0 20px 0
+    width: 100%
+    &:last-child
+      margin: 0 0 30px 0
+    
+.menu__link
+  +alic
+  height: 100%
+  padding: 0 5px
+  transition: all .2s ease-in-out
+  color: $font
+  &:hover
+    color: $font
+
+  @media (max-width: 999px)
+    color: white !important
+    border-radius: 10px
+    padding: 5px
+    background: transparent
+  
+
+// .menu__link--active
+
+.menu__item--tab
+  position: relative
+
+.menu__tab
+  position: absolute
+  top: 38px
+  z-index: 200
+  
+
+.menu-tab
+  display: grid
+  grid-template-columns:  1fr
+  background: white 
+  width: 190px
+  padding: 5px 0px
+
+
+.menu-tab__item 
+  font-size: 13px
+  padding: 5px 10px
+  line-height: 1.2
+  transition: all .2s ease-in-out
+  &:hover
+    background: $active
+    color: white 
+
+.responciveHeader
+  .menu-tab
+    background: rgba(245,245,245, 1)
+
+
+.header__info
+  grid-area: info
+  position: relative
+.info
+  +alic
+  +jucb
+  @media (min-width: 1000px) and (max-width: 1199px)
+    padding: 0 0 0 0	
+    +fdc
+    +jucc
+    flex-wrap: nowrap
+  @media (max-width: 999px)
+    display: none!important
+
+.info-active
+  @media (max-width: 999px)
+    display: block!important
+    transition: all 0.2s ease-in-out
+
+.info   
+
+.info__button
+  width: 100%
+  height: 100%
+
+.header__lang
+  cursor: pointer
+  position: absolute
+  top: 50%
+  transform: translate(0%, -50%) 
+  right: -70px
+  width: 45px
+
+
+
+.menu__item--tab
+  .menu__link
+    position: relative
+    padding: 0 12px 0 0
+    svg
+        width: 6px
+        height: 8px
+        position: absolute
+        top: 50%
+        transform: translate(0%, -50%) rotate(90deg)
+        stroke:#2da34a
+        right:0
+        transition: all .3s ease-in-out
+
+
+.responciveHeader
+  .new-select__list
+    background: hsla(0,0%,96.1%,.9)
+
+
+@media (min-width: 1200px) and (max-width: 1360px)
+  .header__menu
+    margin: 0 70px 0 30px
+  .header__lang
+    right: 160px
+    width: 40px
+
+@media (min-width: 1000px) and (max-width: 1199px)
+  .header__menu
+    margin: 0 70px 0 30px
+  .header__lang
+     right: 160px
+     width: 40px
+
+
+.block__icon
+  +center
+  svg
+    width: 6px
+    height: 8px
+    position: absolute
+    top: 50%
+    transform: translate(0%, -50%) rotate(90deg)
+    stroke:#2da34a
+  
+  
+.menu__item
+  &.block__select
+    padding: 0 5px
+    transition: all .2s ease-in-out
+    &:hover
+        color: white
+        background: lighten($active,30%)
+        box-shadow: 0px 0px 20px lighten($active,60%)!important
+        & > .block__icon
+          z-index: 4
+          svg
+            stroke: white
+    &:focus
+      +border(1px , darken($active,10%)!important)
+      background: lighten($active,10%)
+      box-shadow: 0px 0px 20px lighten($active,60%)!important
+      color: white
+    @media (max-width: 999px)
+      color: white
+      border-radius: 10px
+      padding: 5px
+      background: transparent
+
+@media (max-width: 999px)
+  .header__menu
+    margin: 0 0 0 0
+  .header__lang
+    right: 20px
+  .header__body
+    padding: 0 0
+    grid-template-columns: 135px 1fr 
+  .header__info
+    width:  100%
+    max-width: 105px
+    height: 50px
+  
+  .menu__item
+    &.block__select
+      width: 100%
+      color:  white 
+      text-align: left
+      .block__icon
+        right: 0
+        color:  white 
+
+  .menu__list
+    min-width: 102px
+
+
+  .menu__item--tab
+    .menu__link
+      position: relative
+      padding: 0 12px 0 5px
+
+
+
+
+
+
+

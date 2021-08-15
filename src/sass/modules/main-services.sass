@@ -1,0 +1,72 @@
+.main-services
+  
+.main-services__wrapper
+  background: #ebf4ef
+  padding: 64px 0 
+.main-services__title 
+
+.main-services__title 
+  +jucc
+
+
+.main-services__body
+  display: grid
+  grid-template-columns: repeat(auto-fill, minmax(285px, 1fr))
+  margin: 104px 0 0 0
+  column-gap: 9px
+  row-gap:  74px
+.main-services__item
+  padding: 0 20px 0 0
+  max-height: 500px
+
+.main-card 
+  +fdc
+
+.main-card__link
+  position: relative
+  flex-grow: 1
+  +fdc
+  +juce
+  a
+    position: relative
+    padding: 0 20px 0 0
+    width: 90px
+    font-weight: 800
+
+.main-card__text
+  line-height: 1.8
+  margin: 0 0 30px 0
+
+.main-card__title
+    line-height: 1.35
+    font-weight: 800
+    margin: 30px 0 25px
+
+.i-s
+  position: absolute
+  top: 50%
+  transform: translate(0%, -50%)
+  right:  0
+  width: 6px
+  height: 12px
+
+.main-card__link
+  transition: all .2s ease-in-out
+  &:hover
+    a
+      text-shadow: 0 0 8px rgba(0,0,0, .4)
+
+@media (min-width: 768px) and (max-width: 1199px)
+  .main-services__body 
+    margin: 48px 0 0
+    column-gap: 9px
+    row-gap: 37px
+@media (max-width: 767px)
+  .main-services__body 
+    margin: 43px 0 0
+    row-gap: 47px
+  .i-card 
+    width: 60px
+    height: 60px
+  .main-card__link a 
+    width: 100px
