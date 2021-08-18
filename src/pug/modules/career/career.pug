@@ -1,0 +1,41 @@
+section#career.career
+    .container
+      .career__body
+        .career__column
+          .career__img
+            .imgs
+                img(src='assets/img/carier/carier.webp', alt='img')
+
+        .career__column
+          .career__title
+            h2._f-26-700 Kodėl verta čia dirbti?
+            .career__text  
+                p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+                p  Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip suscipit
+            .career__fax  - Elena Mačionienė, Top Clean direktorė
+
+
+section#carier-tabs.carier-tabs
+  .carier-tabs__wrapper
+    .container
+      .carier-tabs__body
+        .carier-tabs__title
+          h2._f-35-900  Karjera
+        .carier-tabs__column.akr
+                ul.akr__body
+                  - 
+                    items = [
+                      { title: "Valytojai"},
+                      { title: "Kiemsargiai"},
+                      { title: "Darbininkai į mobiliąsias brigadas"},
+                    ]
+          
+                  each item in items
+                    li.akr__item.akr-item
+                        .akr-item__title._f-20-700.akr-title-js=item.title 
+                          .akr-item-img-js 
+                            
+                        .akr__drop.akr-drop.akr-drop-js
+                            p.akr-drop__info Ieškome valytojų, galinčių dirbti visą ar nevisą darbo dieną, penkias darbo dienas per savaitę ar slankiuoju grafiku. Siūlome darbą įvairaus amžiaus ir užimtumo žmonėms: vaikus auginančioms mamoms, neįgaliesiems, senjorams ar norintiems užsidirbti papildomai. Vasarą priimame moksleivius ir studentus. Mes suteikiame visas socialines garantijas ir darbui reikalingas priemones bei reikmenis, laiku mokame atlyginimą
+                            a(href="#!").btn.btn--success.akr-drop__button.btn-common  
+                              span Susisiekite su mumis

@@ -1,0 +1,49 @@
+section#calc.calc
+    .container
+      .calc__body
+        .calc__column
+          .calc__items.calc-items
+            .calc-items__item.calc-item--active
+              .calc-items__num 1
+              .calc-items__text  Valymo tipas
+            .calc-items__item
+              .calc-items__num 2
+              .calc-items__text  Informacija
+            .calc-items__item
+              .calc-items__num 3
+              .calc-items__text  Kontaktinė informacija
+        
+          .calc__title
+            h2._f26-700 1. Pasirinkite valymo tipą 
+          ul.calc__cards.popup__cards 
+            li.popup__card.popup-card.popup-card--active
+              .popup-card__icon
+                svg.icon-line 
+                  use(xlink:href='/assets/img/sprite.svg#house-popup')
+                svg.icon-line 
+                  use(xlink:href='/assets/img/sprite.svg#dotts')
+
+              .popup-card__text  Reguliarus biuro patalpų valymas
+            li.popup__card.popup-card
+              .popup-card__icon
+                svg.icon-line 
+                  use(xlink:href='/assets/img/sprite.svg#i-popup-3')
+                svg.icon-line 
+                  use(xlink:href='/assets/img/sprite.svg#dotts')
+              .popup-card__text  Reguliarus kitos paskirties patalpų valymas
+            li.popup__card.popup-card
+              .popup-card__icon
+                svg.icon-line 
+                  use(xlink:href='/assets/img/sprite.svg#i-popup-2')
+                svg.icon-line 
+                  use(xlink:href='/assets/img/sprite.svg#mark-1')
+              .popup-card__text  Vienkartiniai spec. valymo darbai
+          
+        .calc__column
+          .calc__price._f-20-700  Apskaičiuota preliminari kaina
+          .calc__sum._f-26-700
+            span Suma: 
+            span.calc__total 260 EUR
+          .calc__desc Galutinė tiksli kaina apskaičiuojama tik išsiaiškinus visas smulkmenas, todėl rekomenduojame susisiekti su mumis detalių patikslinimui. 
+      a(href='#!').calc__button.btn.btn--success.btn-common  
+        span TOLIAU

@@ -9,6 +9,7 @@ import $ from 'jquery';
 
 import './js/common'
 // import './js/scrolling'
+import './js/tabs'
 import './js/first'
 // import './js/header'
 import './js/select'
@@ -36,7 +37,8 @@ import "./js/mySlick.js";
 import './css/slick.css';
 
 
-import './css/fonts.css'
+// import './css/fonts.css'
+// import './css/wordpress.css'
 
 
 

@@ -1,0 +1,190 @@
+.contacts-1
+  margin: 190px 0 0 0
+
+.contacts-1__body
+
+.contacts-1__title
+
+.contacts-1__items
+  display: grid
+  grid-template-columns: repeat(3,  1fr)
+  margin: 70px 0 0 0
+  column-gap:  16px
+.contacts-1__item
+  
+.contacts-1-item
+
+.contacts-1-item__title
+  color: #414042
+
+.contacts-1-item__text
+  margin: 20px 0 0 0
+
+
+.contacts-1-item__link
+  color:  $active
+  line-height: 1
+  +alic
+  margin: 17px 0 0 0
+  svg
+    width: 7px
+    height: 12px
+    margin: 0 0 0 10px
+
+
+@media (min-width: 768px) and (max-width: 1199px)
+  .contacts-1__items
+    margin: 40px 0 0 0
+  .contacts-1-item__title
+    margin:  0 0  20px 0
+  .contacts-1-item__link
+    margin: 20px 0 0 0
+@media (max-width: 767px)
+  .contacts-1__items
+    margin: 40px 0 0 0
+  .contacts-1-item__title
+    margin:  0 0  20px 0
+  .contacts-1-item__link
+    margin: 20px 0 0 0
+  .contacts-1__items
+      grid-template-columns:   1fr
+  .contacts-1__item
+      margin: 0 0 20px 0
+  .contacts-1__items
+      margin: 30px 0 0 0
+
+
+@media (max-width: 999px)
+
+
+
+
+// ------------------------------------------------------
+.contacts-2
+  margin: 85px 0 0 0
+.contacts-2__wrapper 
+  background-color: #ebf4ef
+  padding: 70px 0 100px
+  position: relative
+
+.contacts-2__form
+  margin: 58px 0 0 0
+
+.contacts-form__item
+  border-bottom: 2px solid $green
+  width: 58%
+  height: 47px
+  margin: 0 0 28px 0
+  &:nth-child(3)
+    margin: 0 0 40px 0
+  &:nth-child(4)
+    height:  39px
+  &:last-of-type
+    border-bottom: none
+    margin: 34px 0 20px 0
+    
+  label
+    padding-left: 37px!important
+    span
+      display: inline-block
+    a
+        text-decoration: underline!important
+  input,textarea
+    color: #414042!important
+    background: transparent
+    padding: 0 0 0 0
+    height: 100%
+    display: block
+
+
+  input::placeholder,textarea::placeholder
+    font-size: 17px
+    font-weight: normal
+    line-height: 1
+    color: #414042
+    font-family: 'Mulish'
+    opacity: 1
+    transition: all .2s ease-in-out
+  input[type="checkbox"]:checked + label::after, input[type="checkbox"]:not(:checked) + label::after 
+    left: 6px
+    top: 6px
+    width: 10px
+    height: 7px
+
+  input[type="checkbox"]:checked + label::before, input[type="checkbox"]:not(:checked) + label::before
+    width: 22px
+    height: 22px
+    border-radius: 0
+
+  input:focus, textarea:focus
+     &::placeholder
+       opacity: 0
+
+
+.contacts-form__button
+    width: 250px
+    height: 50px
+
+.contacts-2__img
+  position: relative
+  position: absolute
+  bottom: 23.5%
+  right: 11.5%
+  width: 350px  
+  padding: 0 0 350px 0
+  z-index: 2
+
+@media (min-width: 768px) and (max-width: 1199px)
+  .contacts-2__img
+    width: calc(250px + (350-250)*((100vw-768px)/(1199-768)))
+    padding: 0 0 calc(250px + (350-250)*((100vw-768px)/(1199-768))) 0
+    right: 5%
+    bottom: auto
+    top: 70px
+  
+  .contacts-1 
+    margin: 100px 0 0
+  
+  .contacts-2
+    margin: 60px 0 0 0
+    input::placeholder,textarea::placeholder
+      font-size: 15px
+  .contacts-2__body
+    padding: 0 0 40px 0
+  .contacts-form__item 
+    margin: 0 0 5px 0
+  .contacts-2__wrapper 
+    padding: 30px 0 40px
+  .contacts-2__form 
+    margin: 11px 0 0
+
+@media (max-width: 767px)
+  .contacts-1 
+    margin: 100px 0 0
+  
+  .contacts-2__img
+    display: none
+  .contacts-form__button
+      max-width: 200px
+      height: 40px
+      width: 100%
+  .contacts-2
+    margin: 60px 0 0 0
+  .contacts-2__form 
+    margin: 30px 0 0
+  .contacts-2__wrapper  
+    padding: 20px 0 0 0
+    input::placeholder,textarea::placeholder
+      font-size: 15px
+  .contacts-2__body
+    padding: 0 0 40px 0
+  .contacts-form__item 
+    margin: 0 0 20px 0
+    width: 100%
+  .contacts-2__title
+    margin: 0 0 30px 0
+
+
+
+
+

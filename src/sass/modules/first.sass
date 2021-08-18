@@ -1,6 +1,7 @@
 //------.first--------
 .first
-  min-height: 100vh
+  // min-height: 100vh
+  // margin: 0 0 -92px 0
 .header
   z-index: 1000
   transition: all 0.1s ease-in-out
@@ -47,7 +48,7 @@
     // margin: 0 10px
 //-------------
 .header__burger
-  font-size: 20px
+  // font-size: 20px
   display: none
   &:hover
     cursor: pointer
@@ -55,6 +56,10 @@
     display: inline-block
     color: #181818
     +absolute(20px,20px,50%,auto,0,0%,-50%)
+    +center
+    svg
+      width: 20px
+      height: 20px
 //-------------
 .header__logo
   grid-area: logo
@@ -85,11 +90,15 @@
 
 .header__close
   display: none
-  font-size: 20px
+  // font-size: 20px
   @media (max-width: 999px)
     display: block
     +absolute(auto,auto,10px,auto,10px,0%,0%)
-    color: white
+    +center
+    svg
+      width: 20px
+      height: 20px
+
     &:hover
       cursor: pointer
 

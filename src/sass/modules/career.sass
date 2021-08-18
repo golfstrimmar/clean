@@ -1,0 +1,128 @@
+.career
+  margin: 255px 0 94px 0
+
+.career__body
+  display: grid
+  grid-template-columns: 32.2% 1fr
+  column-gap: 45px
+.career__column
+
+
+.career__img
+  position: relative
+  width: 100%
+  padding: 0 0 121.8% 0
+
+
+.career__title
+  margin: 34px 0 0px 0
+  h2
+    color: $green
+
+
+
+.career__text
+  margin: 24px 0 0 0
+  p
+    margin: 20px   0 0 0
+
+.career__fax 
+  margin: 55px   0 0 0
+  
+
+// ----------------------------
+.carier-tabs
+  
+
+.carier-tabs__wrapper
+  background-color: #ebf4ef
+  padding: 53px 0px 89px
+
+.carier-tabs__column
+  margin: 48px 0 0 0
+  border-top: 2px solid $green
+
+.akr-drop__button
+  width: 250px
+  height: 50px
+  margin: 42px 0 0 0
+
+
+.carier-tabs__title
+  h2
+    color: $green
+
+.akr-drop__info
+  margin: 20px 269px 0 0
+
+.akr-item__title
+   color: #414042
+   cursor: pointer
+   position: relative
+
+.akr-item
+    border-bottom: 2px solid #00733b
+    padding: 28px 0 34px 0
+    position: relative
+.akr-item-img-js
+  position: relative
+  position: absolute
+  top: 50%
+  transform: translate(0%, -50%) 
+  right: 10px
+  width: 17px
+  height: 17px
+  transition: all .2s ease-in-out
+  &:after
+    content: ''
+    background: $active
+    position: absolute
+    width: 17px
+    height: 4px
+    top: 50%
+    left: 0
+    transform: translate(0%,-50%) 
+    transition: all .2s ease-in-out
+    
+
+  &:before
+    content: ''
+    background: $active
+    position: absolute
+    width: 4px
+    height: 17px
+    left: 50%
+    transform: translate(-50%,0%)
+    transition: all .2s ease-in-out
+
+.akr-item-img-js-active
+  &:before
+    opacity: 0
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 1199px)
+  .career 
+    margin: 150px 0 50px
+  .akr-drop__info 
+    margin: 20px 0 40px 0
+
+@media (max-width: 767px)
+  .career__body
+    grid-template-columns:  1fr
+
+  .career__img
+    max-width: 265px
+    width: 100%
+    padding: 0 0 253px 0 
+    margin: 0 auto
+
+  .career 
+    margin: 100px 0 50px
+
+  .akr-drop__info 
+    margin: 20px 0 40px 0
+
+

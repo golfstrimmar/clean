@@ -1,0 +1,75 @@
+.about-result
+  margin: -14px 0 82px
+.about-result__body
+  display: grid
+  grid-template-columns: 51% 1fr
+  column-gap: 95px
+.about-result__column
+.about-result-cards
+  display: grid
+  grid-template-columns: repeat(auto-fill, minmax(277px, 1fr))
+  column-gap: 3px
+  row-gap: 39px
+  .about-card
+.about-card__icon
+  svg
+    width: 96px
+    height: 111px
+.about-card__text-green._f-22-800
+.about-card__text
+    margin: -6px 0 9px 0
+    line-height: 1.2
+.about-card__text-green
+  margin: 13px 0 12px 0
+  color:  $green
+  line-height: 1.45
+
+.about-result__column
+.about-result-info
+.about-result-info__title
+.about-result-info__text
+  margin: 38px 0 0 0
+  
+@media (min-width: 768px) and (max-width: 1199px)
+  .about-result
+    margin: 70px 0 50px 0
+  .about-result-cards 
+    grid-template-columns: repeat(auto-fill,minmax(225px,1fr))
+    column-gap: 20px
+    justify-content: center 
+  .about-card__icon 
+    svg 
+      width: 75px
+      height: 71px
+@media (max-width: 767px)
+  .about-result__body
+    grid-template-columns:  1fr
+    row-gap: 40px
+  .about-result
+    margin: 40px 0 
+  .about-card__icon 
+    svg 
+      width: 70px
+      height: 65px
+  .about-result-cards
+      column-gap: 50px
+      grid-template-columns: repeat(auto-fill,minmax(210px,1fr))
+  .about-result-info__text 
+    margin: 10px 0 0
+
+
+
+
+#about-cards
+  .main-card__title
+    min-height: 103px
+
+@media (min-width: 768px) and (max-width: 1199px)
+#about-cards
+  .main-card__title
+    min-height: 90px
+
+@media (max-width: 767px)
+#about-cards
+  .main-card__title
+    min-height: 70px

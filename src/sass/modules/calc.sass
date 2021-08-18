@@ -1,0 +1,124 @@
+.calc
+  margin: 163px 0 50px 0
+  
+.calc__desc 
+  color: #929497
+  line-height: 1.3
+  margin: 19px 0 0 0
+
+.calc__body
+  display: grid
+  grid-template-columns: 50% 1fr
+  column-gap:  57px
+
+
+
+.calc__sum
+  color: #2da34a
+  width: 229px
+  height: 47px
+  background-color: #b5debf
+  +center
+.calc__total
+  margin: 0 0 0 10px
+
+.calc-items__item
+  +fdc
+  +alic
+  position: relative
+  &:after
+    content: ''
+    background-color: #81a966
+    position: absolute
+    width: 100%
+    height: 1px
+    top: 20px
+    left: 0
+    transform: translate(0%,-50%) rotate()
+    z-index: -1
+
+.calc__column
+  &:first-child
+    border-right: 1px solid #C0D4B2
+    padding: 0 105px 0 0
+
+.calc-items
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  
+
+.calc-items__num
+  width: 39px
+  height: 39px
+  background-color: #bbbdbc
+  +center
+  font-size: 18px
+  color: white 
+
+.calc__price
+  color:  #414042
+  margin: 4px 0 20px 0
+
+.calc-items__text 
+  font-size: 14px
+  font-weight: normal
+  color: #929497
+  margin: 4px 0 0 0
+
+
+.calc__button
+  margin: 105px 0 0 0
+
+
+.calc-item--active
+  .calc-items__num
+    background-color: #2da34a
+  
+  .calc-items__text
+    color: #2da34a
+
+.calc__title
+  color:  $green
+  margin: 35px 0 24px 0
+
+#calc
+  .popup__cards
+    margin: 0 0 0 0
+    row-gap: 30px
+
+
+
+@media (max-width: 767px)
+  .calc
+    margin: 100px 0 30px 0
+  .calc__body
+    grid-template-columns:  1fr
+    justify-items: center
+  
+  .calc__column:first-child 
+    border-right: none
+    padding: 0 
+  .calc__column:last-child
+    margin: 40px 0 0 0
+
+  .calc__desc
+     text-align: center 
+  .calc__button
+    margin: 40px auto
+  .calc__column
+    width:100%
+    display: grid
+    grid-template-columns:  1fr
+    justify-items: center  
+  .calc__sum
+    width: 100%
+    max-width: 200px
+
+  .calc-items__text 
+    font-size: 12px
+    line-height: 1.5
+    padding: 0 5px
+    text-align: center
+
+
+

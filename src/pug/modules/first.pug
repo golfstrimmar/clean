@@ -4,7 +4,9 @@ header.header
           a(href="#!").header__logo
             img(src="assets/img/main/svg/logo.svg",alt="img")
           nav.header__menu.menu
-            i.icon-close21.header__close
+            i.header__close
+              svg
+                use(xlink:href='/assets/img/sprite.svg#close')
             ul.menu__list
                 li.menu__item  
                   a.menu__link(href="#about") Apie mus
@@ -38,6 +40,8 @@ header.header
                 .block__icon
                   svg
                       use(xlink:href='/assets/img/sprite.svg#down')
-          i.icon-menu1.header__burger
+          i.header__burger
+            svg 
+              use(xlink:href='/assets/img/sprite.svg#menu')
           
 
